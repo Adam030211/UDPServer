@@ -1,6 +1,8 @@
 from socket import *
+print("Starting server...")
 serverPort = 12000
 serverSocket = socket(AF_INET, SOCK_DGRAM)
+print("Socket created...")
 serverSocket.bind(('', serverPort))
 print('The server is ready to receive')
 while True:
